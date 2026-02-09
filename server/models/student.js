@@ -56,6 +56,9 @@ const studentSchema = new Schema({
   fatherContactNumber: {
     type: Number,
   },
+  motherContactNumber: {
+    type: Number,
+  },
   dob: {
     type: String,
     required: true,

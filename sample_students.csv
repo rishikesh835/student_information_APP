@@ -1,0 +1,22 @@
+name,email,dob,department,year,section,batch,gender,contactNumber,fatherName,motherName,fatherContactNumber,motherContactNumber
+Rahul Sharma,rahul.sharma@kiet.edu,2003-05-15,Computer Science,2,1,2022-2026,Male,9876543210,Ramesh Sharma,Sunita Sharma,9876543211,9876543212
+Priya Patel,priya.patel@kiet.edu,2003-08-22,Computer Science,2,1,2022-2026,Female,9876543220,Mahesh Patel,Kavita Patel,9876543221,9876543222
+Amit Kumar,amit.kumar@kiet.edu,2003-03-10,Electronics,1,2,2023-2027,Male,9876543230,Rajesh Kumar,Meera Kumar,9876543231,9876543232
+Sneha Singh,sneha.singh@kiet.edu,2002-11-18,Computer Science,3,1,2021-2025,Female,9876543240,Vikram Singh,Anita Singh,9876543241,9876543242
+Vikram Reddy,vikram.reddy@kiet.edu,2003-07-05,Mechanical,2,3,2022-2026,Male,9876543250,Suresh Reddy,Lakshmi Reddy,9876543251,9876543252
+Anjali Verma,anjali.verma@kiet.edu,2003-09-30,Electronics,2,2,2022-2026,Female,9876543260,Ashok Verma,Pooja Verma,9876543261,9876543262
+Rohit Gupta,rohit.gupta@kiet.edu,2002-12-25,Civil,3,1,2021-2025,Male,9876543270,Sanjay Gupta,Neeta Gupta,9876543271,9876543272
+Kavita Mishra,kavitaa.mishra@kiet.edu,14/04/2003,Computer Science,2,2,2022-2026,Female,9876543280,Amit Mishra,Radha Mishra,9876543281,9876543282
+Arjun Nair,arjun.nair@kiet.edu,2003-06-20,Mechanical,2,1,2022-2026,Male,9876543290,Raj Nair,Shanti Nair,9876543291,9876543292
+Divya Joshi,divya.joshi@kiet.edu,2002-10-08,Electronics,3,3,2021-2025,Female,9876543300,Manoj Joshi,Seema Joshi,9876543301,9876543302
+Karan Malhotra,karan.malhotra@kiet.edu,2003-02-28,Computer Science,2,3,2022-2026,Male,9876543310,Deepak Malhotra,Sarita Malhotra,9876543311,9876543312
+Meera Iyer,meera.iyer@kiet.edu,2003-01-15,Civil,2,2,2022-2026,Female,9876543320,Srinivas Iyer,Padma Iyer,9876543321,9876543322
+Siddharth Rao,siddharth.rao@kiet.edu,2004-05-20,Computer Science,1,1,2023-2027,Male,9876543330,Venkatesh Rao,Geeta Rao,9876543331,9876543332
+Pooja Desai,pooja.desai@kiet.edu,2003-09-12,Electronics,2,1,2022-2026,Female,9876543340,Jayesh Desai,Reena Desai,9876543341,9876543342
+Aditya Shah,aditya.shah@kiet.edu,2002-07-25,Mechanical,3,2,2021-2025,Male,9876543350,Nitin Shah,Swati Shah,9876543351,9876543352
+Neha Agarwal,neha.agarwal@kiet.edu,2003-11-03,Computer Science,2,1,2022-2026,Female,9876543360,Vinod Agarwal,Shalini Agarwal,9876543361,9876543362
+Rohan Mehta,rohan.mehta@kiet.edu,2003-08-17,Civil,2,3,2022-2026,Male,9876543370,Anil Mehta,Manju Mehta,9876543371,9876543372
+Shreya Bhatt,shreya.bhatt@kiet.edu,2004-04-09,Computer Science,1,2,2023-2027,Female,9876543380,Ravi Bhatt,Anjali Bhatt,9876543381,9876543382
+Yash Chaturvedi,yash.chaturvedi@kiet.edu,2003-12-30,Electronics,2,2,2022-2026,Male,9876543390,Sunil Chaturvedi,Rekha Chaturvedi,9876543391,9876543392
+Isha Kapoor,isha.kapoor@kiet.edu,2002-09-14,Mechanical,3,1,2021-2025,Female,9876543400,Rohit Kapoor,Madhu Kapoor,9876543401,9876543402
+

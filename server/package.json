@@ -19,6 +19,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^6.15.0",
     "mongoose": "^6.2.0",
-    "nodemon": "^2.0.15"
+    "multer": "^2.0.2",
+    "nodemon": "^2.0.15",
+    "xlsx": "^0.18.5"
   }
 }

@@ -1,4 +1,5 @@
 import express from "express";
+import multer from "multer";
 import auth from "../middleware/auth.js";
 import {
   adminLogin,
@@ -25,7 +26,10 @@ import {
   deleteSubject,
   createNotice,
   getNotice,
+  bulkAddStudent,
 } from "../controller/adminController.js";
+
+const upload = multer({ dest: "uploads/" });
 const router = express.Router();
 
 router.post("/login", adminLogin);
@@ -44,6 +48,7 @@ router.post("/getfaculty", auth, getFaculty);
 router.post("/addsubject", auth, addSubject);
 router.post("/getsubject", auth, getSubject);
 router.post("/addstudent", auth, addStudent);
+router.post("/bulkaddstudent", auth, upload.single("file"), bulkAddStudent);
 router.post("/getstudent", auth, getStudent);
 router.post("/getnotice", auth, getNotice);
 router.post("/getadmin", auth, getAdmin);

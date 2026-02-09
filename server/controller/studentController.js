@@ -16,10 +16,14 @@ export const studentLogin = async (req, res) => {
       errors.usernameError = "Student doesn't exist.";
       return res.status(404).json(errors);
     }
+    console.log(existingStudent);
+    console.log(password);
+    console.log(existingStudent.password);
     const isPasswordCorrect = await bcrypt.compare(
       password,
       existingStudent.password
     );
+    console.log(isPasswordCorrect);
     if (!isPasswordCorrect) {
       errors.passwordError = "Invalid Credentials";
       return res.status(404).json(errors);
