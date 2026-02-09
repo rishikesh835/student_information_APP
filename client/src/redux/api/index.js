@@ -63,6 +63,13 @@ export const getSubject = (subject) =>
 export const addStudent = (student) =>
   API.post("/api/admin/addstudent", student);
 
+export const bulkAddStudent = (formData) =>
+  API.post("/api/admin/bulkaddstudent", formData, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
+
 export const getStudent = (student) =>
   API.post("/api/admin/getstudent", student);
 export const getNotice = (notice) => API.post("/api/admin/getnotice", notice);

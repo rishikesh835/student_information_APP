@@ -42,6 +42,7 @@ import DeleteFaculty from "./components/admin/deleteFaculty/DeleteFaculty";
 import DeleteStudent from "./components/admin/deleteStudent/DeleteStudent";
 import DeleteSubject from "./components/admin/deleteSubject/DeleteSubject";
 import CreateNotice from "./components/admin/createNotice/CreateNotice";
+import BulkAddStudent from "./components/admin/bulkAddStudent/BulkAddStudent";
 
 const App = () => {
   return (
@@ -70,6 +71,7 @@ const App = () => {
       <Route path="/admin/deletesubject" element={<DeleteSubject />} />
       <Route path="/admin/allfaculty" element={<GetFaculty />} />
       <Route path="/admin/addstudent" element={<AddStudent />} />
+      <Route path="/admin/bulkaddstudent" element={<BulkAddStudent />} />
       <Route path="/admin/addsubject" element={<AddSubject />} />
       <Route path="/admin/allsubject" element={<GetSubject />} />
       <Route path="/admin/allstudent" element={<GetStudent />} />

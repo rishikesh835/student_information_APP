@@ -23,6 +23,7 @@ import {
   DELETE_SUBJECT,
   CREATE_NOTICE,
   GET_NOTICE,
+  BULK_ADD_STUDENT,
 } from "../actionTypes";
 import * as api from "../api";
 
@@ -226,6 +227,40 @@ export const addStudent = (formData) => async (dispatch) => {
     dispatch({ type: ADD_STUDENT, payload: true });
   } catch (error) {
     dispatch({ type: SET_ERRORS, payload: error.response.data });
+  }
+};
+
+export const bulkAddStudent = (formData) => async (dispatch) => {
+  try {
+    const { data } = await api.bulkAddStudent(formData);
+    let message = `Successfully added ${data.count} student(s)`;
+    if (data.errorCount > 0) {
+      message += `. ${data.errorCount} row(s) had errors.`;
+      if (data.errors && data.errors.length > 0) {
+        console.log("Upload errors:", data.errors);
+        // Show first 5 errors in alert
+        const errorPreview = data.errors.slice(0, 5).join("\n");
+        const moreErrors = data.errors.length > 5 ? `\n... and ${data.errors.length - 5} more errors` : "";
+        alert(message + "\n\nFirst few errors:\n" + errorPreview + moreErrors);
+      } else {
+        alert(message);
+      }
+    } else {
+      alert(message);
+    }
+    dispatch({ type: BULK_ADD_STUDENT, payload: true });
+  } catch (error) {
+    const errorData = error.response?.data;
+    const errorMessage = errorData?.backendError || errorData?.message || "Failed to process file";
+    console.log("Bulk upload error:", errorData);
+    
+    // If we have error details in the response, include them
+    const errorPayload = errorData || { backendError: errorMessage };
+    if (errorData?.errors && Array.isArray(errorData.errors)) {
+      errorPayload.errors = errorData.errors;
+    }
+    
+    dispatch({ type: SET_ERRORS, payload: errorPayload });
   }
 };
 

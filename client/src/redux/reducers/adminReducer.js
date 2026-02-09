@@ -24,6 +24,7 @@ import {
   DELETE_SUBJECT,
   CREATE_NOTICE,
   GET_NOTICE,
+  BULK_ADD_STUDENT,
 } from "../actionTypes";
 
 const initialState = {
@@ -51,6 +52,7 @@ const initialState = {
   studentDeleted: false,
   subjectDeleted: false,
   noticeCreated: false,
+  studentsBulkAdded: false,
 };
 
 const adminReducer = (state = initialState, action) => {
@@ -165,6 +167,7 @@ const adminReducer = (state = initialState, action) => {
       return {
         ...state,
         studentAdded: action.payload,
+        studentsBulkAdded: false,
       };
     case GET_STUDENT:
       return {
@@ -175,6 +178,11 @@ const adminReducer = (state = initialState, action) => {
       return {
         ...state,
         allStudent: action.payload,
+      };
+    case BULK_ADD_STUDENT:
+      return {
+        ...state,
+        studentsBulkAdded: action.payload,
       };
     default:
       return state;
